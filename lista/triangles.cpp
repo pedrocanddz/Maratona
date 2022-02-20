@@ -24,6 +24,7 @@ int main()
     {
         cout << "TRIANGULO RETANGULO" << endl;
     }
+    else if (pow(lados[1], 2) > pow)
     
     // cout << lados[0] << " " << resultRight << " " << lados[1] << " " << lados[2] << endl;
 
