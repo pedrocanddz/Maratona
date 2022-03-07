@@ -15,7 +15,6 @@ int main()
     fib(fibarray, 60);
 
     for (int i = 0; i < n; i++){
-        // cout << "Number " << t[i] + 1 << " " << fibarray[t[i] +1 ] << endl;
         cout << "Fib(" << t[i] << ") = " << fibarray[t[i]] << endl;
     }
 
