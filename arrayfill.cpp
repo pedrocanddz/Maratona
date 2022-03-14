@@ -51,9 +51,7 @@ int main()
     {
         if(par[i] != 0)
         {
-            cout << "par[" << i << "] = " << par[i] << endl;
-            
+            cout << "par[" << i << "] = " << par[i] << endl;            
         }
     }
-
 }

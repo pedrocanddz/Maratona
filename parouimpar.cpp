@@ -5,7 +5,7 @@ using namespace std;
 
 int main()
 {
-    int n = 0, a[5], b[5], partida = 0;
+    int n = 0, a[1000], b[1000], partida = 0;
     
     string jog1, jog2;
 
@@ -23,6 +23,7 @@ int main()
             }else{
                 cout << jog2 << endl;
             }
+        cout << "\n";
     }
     partida++;
     }while(n != 0);
