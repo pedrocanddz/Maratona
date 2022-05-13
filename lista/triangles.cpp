@@ -7,18 +7,30 @@ void sort(double v[], int n);
 
 int main()
 {
-    double lados[3];
+    double a, b, c;
     double powCB;
-    
+    cin >> a >> b >> c;
 
-    for(int i = 0;i < 3; i++)
-        cin >> lados[i];
+    if(a < b){
+        double aux = a;
+        a = b;
+        b = aux;
+    }
+    if(a < c){
+        double aux = a;
+        a = c;
+        c = aux;
+    }
+    if(b < c){
+        double aux = b;
+        b = c;
+        c = aux;
+    }
 
-    sort(lados, 3);
-    powCB = pow(lados[1], 2) + pow(lados[2], 2);
+    powCB = pow(b, 2) + pow(c, 2);
     
-    double powA = pow(lados[0], 2);
-    if(lados[0] >= lados[1] + lados[2]){
+    double powA = pow(a, 2);
+    if(a >= b + c){
         cout << "NAO FORMA TRIANGULO" << endl;
     }else{
     if (powA == powCB)
@@ -27,8 +39,8 @@ int main()
         cout << "TRIANGULO OBTUSANGULO" << endl;
     if(powA < powCB)
         cout << "TRIANGULO ACUTANGULO" << endl;
-    if(lados[0] == lados[1] || lados[0] == lados[2] || lados[1] == lados[2]){
-        if(lados[1] == lados[2] && lados[0] == lados[1]){
+    if(a == b || a == c || b == c){
+        if(b == c && a == b){
             cout << "TRIANGULO EQUILATERO" << endl;
         }else{
             cout << "TRIANGULO ISOSCELES" << endl;
